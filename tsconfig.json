@@ -1,27 +1,29 @@
+
 // {
 //   "compilerOptions": {
 //     "target": "ES6",
 //     "module": "commonjs",
+//     "strict": true,
+//     "esModuleInterop": true,
+//     "skipLibCheck": true,
+//     "forceConsistentCasingInFileNames": true,
 //     "outDir": "./dist",
 //     "rootDir": "./src",
-//     "strict": true,
-//     "esModuleInterop": true
+//     "typeRoots": ["./node_modules/@types", "./src/types"]
 //   },
-//   "include": ["src/**/*"],
+//   "include": ["src/**/*", "src/types/**/*"],
 //   "exclude": ["node_modules"]
 // }
+
 {
   "compilerOptions": {
     "target": "ES6",
     "module": "commonjs",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "outDir": "./dist",
     "rootDir": "./src",
-    "typeRoots": ["./node_modules/@types", "./src/types"]
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "strict": true
   },
-  "include": ["src/**/*", "src/types/**/*"],
+  "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]
 }
